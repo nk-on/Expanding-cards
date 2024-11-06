@@ -1,26 +1,40 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from 'react';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-  const cardNumbers = [1,2,3,4,5];
+  const [count, setCount] = useState(0);
+  const images = [
+    {
+      id: 1,
+      src: 'src/assets/Beach.avif',
+    },
+    {
+      id: 2,
+      src: 'src/assets/Bridge.avif',
+    },
+    {
+      id: 3,
+      src: 'src/assets/Forest.avif',
+    },
+    {
+      id: 4,
+      src: 'src/assets/Mountains.avif',
+    },
+  ];
   return (
     <>
-     <div className='Container'>
-        {
-          cardNumbers.map((card)=>{
-            return <Card key={card} cardNumber= {card} />
-          })
-        }
-     </div>
+      <div className="Container">
+        {images.map((image) => {
+          return <Card key={image.id} imageSrc={image.src} />;
+        })}
+      </div>
     </>
-  )
+  );
 }
-function Card({cardNumber}){
+function Card({ imageSrc }) {
   return (
-    <div className= {`Card Card-${cardNumber}`}>
-
+    <div className= 'Card'>
     </div>
-  )
+  );
 }
-export default App
+export default App;

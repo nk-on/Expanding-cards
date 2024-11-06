@@ -33,7 +33,8 @@ function App() {
 }
 function Card({ imageSrc }) {
   return (
-    <div className= 'Card'>
+    <div className= 'Card' style={{background:`url(${imageSrc})`}}>
+      
     </div>
   );
 }

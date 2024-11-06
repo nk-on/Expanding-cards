@@ -1,0 +1,12 @@
+.Container{
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    height: 90%;
+    border: 1px solid red;
+}
+.Card{
+    border: 1px solid green;
+    width: 25%;
+    height: 80vh;
+}

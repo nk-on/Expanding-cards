@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-
+import Card from './Components/Card/Card';
 function App() {
   const images = [
     {
@@ -30,12 +30,5 @@ function App() {
       </div>
     </>
   );
-}
-function Card({ imageSrc, id,activeIndex,setActiveIndex}) {
-    return (
-      <div className = {`Card ${id === activeIndex ? 'Expanded': ''}`} onClick ={()=> setActiveIndex(id)} style={{background:`url(${imageSrc})`}}>
-        
-      </div>
-    );
 }
 export default App;

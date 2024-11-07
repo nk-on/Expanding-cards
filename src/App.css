@@ -5,17 +5,3 @@
     min-width: 90vw;
     height: 90%;
 }
-.Card{
-    flex: 1;
-    cursor: pointer;
-    background-position-x: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 25%;
-    height: 80vh;
-    border-radius: 20px;
-    transition: flex 0.5s ease-in;
-}
-.Expanded{
-    flex:5;
-}

@@ -13,6 +13,8 @@
     background-repeat: no-repeat;
     width: 25%;
     height: 80vh;
+    border-radius: 20px;
+    transition: flex 0.5s ease-in;
 }
 .Expanded{
     flex:5;
